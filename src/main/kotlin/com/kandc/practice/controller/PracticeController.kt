@@ -8,8 +8,5 @@ import org.springframework.web.bind.annotation.GetMapping
 class PracticeController {
 
     @GetMapping("/ping")
-    fun ping(): ResponseEntity<String> {
-        return ResponseEntity.ok("LIVE")
-    }
-
+    fun ping() = ResponseEntity.ok("LIVE")
 }
